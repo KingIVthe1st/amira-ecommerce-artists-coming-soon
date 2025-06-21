@@ -1,6 +1,6 @@
-/* HEADLINE FIX - Prevent awkward line breaks */
+/* HEADLINE FIX - Prevent awkward line breaks AND center properly */
 
-/* Fix hero title line breaking */
+/* Fix hero title line breaking and centering */
 .hero-title {
   font-family: var(--font-display) !important;
   font-size: clamp(2.5rem, 6vw, 5rem) !important;
@@ -10,18 +10,22 @@
   text-align: center !important;
   width: 100% !important;
   max-width: 100% !important;
-  word-wrap: normal !important;
-  overflow-wrap: normal !important;
-  white-space: nowrap !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* Ensure title lines display properly */
+/* Ensure title lines display properly and centered */
 .title-line {
   display: block !important;
   text-align: center !important;
   width: 100% !important;
   white-space: nowrap !important;
   word-break: keep-all !important;
+  margin: 0 auto !important;
 }
 
 .title-line.accent {
@@ -31,6 +35,7 @@
   background-clip: text !important;
   text-align: center !important;
   white-space: nowrap !important;
+  margin: 0 auto !important;
 }
 
 /* Mobile responsive adjustments for title */
