@@ -1,0 +1,105 @@
+/* ULTIMATE HEADLINE CENTERING FIX - December 21, 2025 */
+/* This completely overrides all previous centering attempts */
+
+/* First, reset everything */
+.hero-title,
+.hero-title *,
+h2.hero-title,
+h2.hero-title * {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  position: static !important;
+  transform: none !important;
+  left: auto !important;
+  right: auto !important;
+  float: none !important;
+  clear: both !important;
+}
+
+/* Main title container */
+.hero-title {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 auto var(--space-lg) auto !important;
+  text-align: center !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+/* Each title line - make them block elements for perfect centering */
+.title-line {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+}
+
+/* First line (Ecommerce) */
+.title-line:first-child {
+  margin-bottom: 0.1em !important;
+}
+
+/* Second line with gradient (for Artists) */
+.title-line.accent {
+  background: var(--gradient-secondary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Ensure hero content container doesn't interfere */
+.hero-content {
+  display: block !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/* Hero section container */
+.hero {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Container */
+.container {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3.5rem) !important;
+  }
+  
+  .title-line {
+    margin-bottom: 0.15em !important;
+  }
+}
+
+/* Extra specificity to override any inline styles */
+body .container .hero .hero-content .hero-title .title-line {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* Debug - add visual guide (remove after confirming) */
+/* .hero-title {
+  border: 2px solid red !important;
+}
+.title-line {
+  border: 1px solid yellow !important;
+} */

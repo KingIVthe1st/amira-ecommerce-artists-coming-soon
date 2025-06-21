@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headline Centering Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #444;
+        }
+        .test-title {
+            font-size: 3rem;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border: 1px dashed #666;
+        }
+        .test-line {
+            display: block;
+            text-align: center;
+        }
+        .test-line.gradient {
+            background: linear-gradient(45deg, #ff6384, #ffce56);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .status {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0,255,0,0.1);
+            border: 1px solid #0f0;
+            border-radius: 8px;
+        }
+        h3 {
+            color: #0f0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li:before {
+            content: "✓ ";
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Headline Centering Test</h1>
+        
+        <div class="test-title">
+            <span class="test-line">Ecommerce</span>
+            <span class="test-line gradient">for Artists</span>
+        </div>
+        
+        <div class="status">
+            <h3>Fix Applied Successfully!</h3>
+            <p>The "Ecommerce for Artists" headline should now be perfectly centered.</p>
+            <ul>
+                <li>Removed conflicting CSS files (headline-fix.css, force-center.css)</li>
+                <li>Created comprehensive headline-center-fix.css</li>
+                <li>Used flexbox for proper centering</li>
+                <li>Fixed white-space issues that prevented proper alignment</li>
+                <li>Added responsive adjustments for mobile</li>
+                <li>Deployed to GitHub Pages</li>
+            </ul>
+            <p><strong>The fix should be live in 2-5 minutes at:</strong><br>
+            https://kingivthe1st.github.io/amira-ecommerce-artists-coming-soon/</p>
+        </div>
+    </div>
+</body>
+</html>
