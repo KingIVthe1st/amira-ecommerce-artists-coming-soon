@@ -1,24 +1,22 @@
-/* HEADLINE FIX - Prevent awkward line breaks AND center properly */
+/* ULTIMATE HEADLINE CENTERING FIX */
 
-/* Fix hero title line breaking and centering */
+/* Perfect centering for hero title */
 .hero-title {
   font-family: var(--font-display) !important;
   font-size: clamp(2.5rem, 6vw, 5rem) !important;
   font-weight: 700 !important;
   line-height: 1.1 !important;
-  margin-bottom: var(--space-lg) !important;
+  margin: var(--space-lg) auto !important;
   text-align: center !important;
   width: 100% !important;
-  max-width: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-width: 1200px !important;
+  display: block !important;
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 
-/* Ensure title lines display properly and centered */
+/* Perfect centering for title lines */
 .title-line {
   display: block !important;
   text-align: center !important;
@@ -26,6 +24,7 @@
   white-space: nowrap !important;
   word-break: keep-all !important;
   margin: 0 auto !important;
+  position: relative !important;
 }
 
 .title-line.accent {
@@ -38,11 +37,21 @@
   margin: 0 auto !important;
 }
 
-/* Mobile responsive adjustments for title */
+/* Ensure main content container is centered */
+.main-content {
+  text-align: center !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: var(--space-xl) var(--space-md) !important;
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .hero-title {
     font-size: clamp(2rem, 5vw, 3rem) !important;
-    white-space: normal !important;
+    left: 0 !important;
+    transform: none !important;
+    position: relative !important;
   }
   
   .title-line {
@@ -55,7 +64,6 @@
   }
 }
 
-/* Ensure no word breaking on small screens but allow normal wrapping */
 @media (max-width: 480px) {
   .hero-title {
     font-size: clamp(1.8rem, 4.5vw, 2.5rem) !important;
