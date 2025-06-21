@@ -1,0 +1,116 @@
+# Amira Rahim - Ecommerce for Artists Coming Soon
+# Git Ignore File
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if using build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build and Distribution
+dist/
+build/
+.cache/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Temporary Files
+tmp/
+temp/
+.tmp/
+
+# Image Optimization Cache
+.next/
+.nuxt/
+
+# Browser Testing
+.browserstack/
+.sauce/
+
+# Coverage Reports
+coverage/
+.nyc_output/
+
+# Backup Files
+*.backup
+*.bak
+*.orig
+
+# OS Generated Files
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Development Tools
+.eslintcache
+.stylelintcache
+.parcel-cache/
+
+# Email Service Configurations (keep secure)
+email-config.json
+api-keys.json
+secrets.json
+
+# Analytics and Tracking (keep private)
+analytics-config.js
+tracking-codes.js
+
+# Local Development
+local-server.log
+dev-server.log
+
+# Deployment Files (if automated)
+deploy.log
+.deploy/
+
+# WordPress (if using WP)
+wp-config.php
+.htaccess
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Compressed Files
+*.zip
+*.tar.gz
+*.rar
+
+# Image Sources (keep originals private)
+src-images/
+original-assets/
+design-files/
+
+# Documentation Drafts
+docs-draft/
+notes/
+planning/
