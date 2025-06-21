@@ -1,0 +1,65 @@
+/* VISUAL ENHANCEMENTS & COMPLETENESS IMPROVEMENTS */
+
+/* Add subtle animations for better engagement */
+.brand-name {
+  animation: glow 3s ease-in-out infinite alternate !important;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 99, 132, 0.3);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 99, 132, 0.6), 
+                 0 0 30px rgba(153, 102, 255, 0.4);
+  }
+}
+
+/* Enhanced proof numbers styling */
+.proof-number {
+  font-size: clamp(1.5rem, 3vw, 2rem) !important;
+  font-weight: 700 !important;
+  background: var(--gradient-primary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Better form styling */
+.form-title {
+  background: var(--gradient-accent) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-size: clamp(1.5rem, 3vw, 2rem) !important;
+  font-weight: 600 !important;
+  margin-bottom: var(--space-md) !important;
+}
+
+.form-subtitle {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: clamp(1rem, 2vw, 1.125rem) !important;
+  margin-bottom: var(--space-lg) !important;
+  max-width: 500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Better button styling */
+.submit-btn {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  padding: var(--space-md) var(--space-xl) !important;
+  border-radius: 50px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  transform: translateY(0) !important;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(255, 99, 132, 0.3) !important;
+}

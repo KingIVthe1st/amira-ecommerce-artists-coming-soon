@@ -1,0 +1,113 @@
+/* COMPREHENSIVE HEADLINE CENTERING FIX */
+/* This fix addresses the specific issue with "Ecommerce for Artists" not being centered */
+
+/* Reset and fix the hero title container */
+.hero-title {
+  /* Remove any existing positioning */
+  position: static !important;
+  transform: none !important;
+  left: auto !important;
+  right: auto !important;
+  
+  /* Ensure proper block display and centering */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  
+  /* Reset margins and ensure proper spacing */
+  margin: 0 auto var(--space-lg) auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  
+  /* Typography settings */
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+}
+
+/* Fix individual title lines */
+.title-line {
+  /* Ensure each line is properly centered */
+  display: inline-block !important;
+  text-align: center !important;
+  width: auto !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  
+  /* Allow text to wrap on smaller screens */
+  white-space: normal !important;
+  
+  /* Remove any positioning */
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+/* Fix the gradient text */
+.title-line.accent {
+  /* Maintain gradient effect */
+  background: var(--gradient-secondary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  
+  /* Ensure centering */
+  display: inline-block !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+/* Container fixes to ensure proper centering context */
+.hero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.hero-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+  
+  .title-line {
+    /* Stack lines on mobile if needed */
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 0.2em !important;
+  }
+}
+
+/* Remove conflicting styles from previous fixes */
+h2.hero-title span,
+.hero-title span {
+  float: none !important;
+  clear: both !important;
+}
+
+/* Ensure badge is also centered */
+.badge {
+  display: inline-flex !important;
+  margin: 0 auto var(--space-md) auto !important;
+}
+
+/* Debug helper - remove this after confirming fix works */
+.hero-title {
+  /* border: 2px solid red !important; */
+}
