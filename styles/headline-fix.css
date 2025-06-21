@@ -1,0 +1,58 @@
+/* HEADLINE FIX - Prevent awkward line breaks */
+
+/* Fix hero title line breaking */
+.hero-title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  margin-bottom: var(--space-lg) !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  word-wrap: normal !important;
+  overflow-wrap: normal !important;
+  white-space: nowrap !important;
+}
+
+/* Ensure title lines display properly */
+.title-line {
+  display: block !important;
+  text-align: center !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.title-line.accent {
+  background: var(--gradient-secondary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+/* Mobile responsive adjustments for title */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3rem) !important;
+    white-space: normal !important;
+  }
+  
+  .title-line {
+    white-space: normal !important;
+    word-break: normal !important;
+  }
+  
+  .title-line.accent {
+    white-space: normal !important;
+  }
+}
+
+/* Ensure no word breaking on small screens but allow normal wrapping */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem) !important;
+  }
+}
